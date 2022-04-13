@@ -1,0 +1,44 @@
+/* ROUTE STARTS */
+.inner-banner {
+    background: #1668ec;
+    background: linear-gradient(to right, #1668ec 0%,#685ac5 100%);
+    width: 100%;
+    height: 45vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-text {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+    .inner-text h1 {
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+.breadcrumb {
+    padding: 0 15px;
+    margin: 0;
+    background: none;
+    justify-content: center;
+}
+
+    .breadcrumb .breadcrumb-item a {
+        color: #eee;
+        text-decoration:none ;
+    }
+
+        .breadcrumb .breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before, .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }

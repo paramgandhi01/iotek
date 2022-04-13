@@ -1,0 +1,146 @@
+.faq-container{
+    height: 580px;
+    /* position: relative;
+    top:30px; */
+    /* background-color: aqua; */
+}
+.container{
+    /* background-color: bisque; */
+    height: 580px;
+}
+.faq-section-title{
+/* background-color: rgb(28, 54, 77); */
+ position: relative; 
+top:50px; 
+}
+.faq-section-title h2,p{
+    color: rgb(57,51,51);
+
+}
+.faq-section-title h2{
+    position: relative;
+    font-size: 2rem;
+}
+.faq-section-title h2::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #1668ec;
+    display: block;
+    top: -15px;
+    left: -30px;
+    right: 0;
+    margin: auto;
+}
+
+.faq-section-title h2::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background-color: #1668ec;
+    display: block;
+    top: -15px;
+    left: 0;
+    right: -70px;
+    margin: auto;
+}
+.faq-main{
+    position: relative;
+    top:30px;
+    height: 350px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+}
+.faq-accordion{
+    width: 48%;
+    /* background-color: aquamarine; */
+}
+ .faq-container .faq-accordion .accordion .card {
+    border: 0;
+    background: none;
+}
+        .faq-container .faq-accordion .accordion .card .card-header {
+            border: 0;
+            background: none;
+            margin-top: 15px;
+            padding: 1px 0px;
+        }
+        .faq-container .faq-accordion .accordion .card .card-header a {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+            display: block;
+            position: relative;
+            padding: 10px 15px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #e4e4e4;
+            text-decoration: none;
+        }
+        
+        .faq-container .faq-accordion .accordion .card .card-header a::before {
+            content: '\ea58';
+            font-family: 'LineIcons';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+        }
+.faq-img{
+    width: 48%;
+    /* background-color: blue; */
+}
+.faq-image{
+    width: 100%;
+    height: 100%;
+}
+.faq-container .faq-accordion .accordion .card .card-body {
+    padding: 20px 10px;
+}
+/* ROUTE STARTS */
+.inner-banner {
+    background: #1668ec;
+    background: linear-gradient(to right, #1668ec 0%,#685ac5 100%);
+    width: 100%;
+    height: 45vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-text {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+    .inner-text h1 {
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+.breadcrumb {
+    padding: 0 15px;
+    margin: 0;
+    background: none;
+    justify-content: center;
+}
+
+    .breadcrumb .breadcrumb-item a {
+        color: #eee;
+        text-decoration:none ;
+    }
+
+        .breadcrumb .breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before, .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }

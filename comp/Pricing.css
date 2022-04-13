@@ -1,0 +1,248 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+}
+.container1{
+    height:650px;
+    /* background-color:rgb(148, 66, 196); */
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+
+}
+.Pricing-section-title{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    top:50px;
+    text-align: center;
+    /* position: relative; */
+    /* margin-bottom: 90px; */
+}
+.Pricing-section-title h2,p{
+    color: rgb(57,51,51);
+
+}
+.Pricing-section-title h2{
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+}
+.Pricing-section-title p{
+    font-size: 1.2rem;
+}
+.Pricing-section-title h2::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #1668ec;
+    display: block;
+    top: -15px;
+    left: -30px;
+    right: 0;
+    margin: auto;
+}
+
+.Pricing-section-title h2::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background-color: #1668ec;
+    display: block;
+    top: -15px;
+    left: 0;
+    right: -70px;
+    margin: auto;
+}
+.pricing-cards{
+    margin-top: 10px;
+    position: relative;
+    top:50px;
+    width:100%;
+    height:407px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.pricing-card1{
+    margin: 0;
+    width:25%;
+    height: 100%;
+    border-radius: 9px;
+    /* background-color: bisque; */
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border: 2px solid #f8f9fa;
+    background-image: url("price-shape.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+    .pricing-card1:hover{
+        border: 2px solid #fc3832;
+        transition: all 0.3s ease-out 0s;
+    }
+
+.pricing-card2{
+    margin: 0;
+    width:25%;
+    height: 100%;
+    /* background-color: bisque; */
+    border-radius: 9px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border: 2px solid #f8f9fa;
+    background-image: url("price-shape.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+    .pricing-card2:hover{
+        border: 2px solid #fc3832;
+        transition: all 0.3s ease-out 0s;
+    }
+.pricing-card3{
+    width:25%;
+    height: 100%;
+    /* background-color: bisque; */
+    border-radius: 9px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border: 2px solid #f8f9fa;
+    background-image: url("price-shape.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+    .pricing-card3:hover{
+        border: 2px solid #fc3832;
+        transition: all 0.3s ease-out 0s;
+    }
+ .prices{
+    width: 100%;
+    height: 30%;
+    /* background-color: #1668ec; */
+    padding: 9px;
+}
+ .lists{
+    width: 100%;
+    height: 40%;
+    /* background-color: #532dad; */
+    padding-left: 10px;
+    padding-top: 10px;
+}
+ .p-btn{
+    width: 100%;
+    height: 30%;
+    /* background-color: #4c6fa7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-btn div{
+    /* background-color: #333333; */
+    position: relative;
+    top:13px;
+    height: 70px;
+    width: auto;
+}
+.prices div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prices p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #333333;
+    position: relative;
+    padding-bottom: 8px;
+}
+.prices h5{
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    color: #333333;
+}
+.lists ul li{
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 16px;
+    list-style: none;
+}
+    .lists ul li i{
+        color: #0067f4;
+        margin-right: 8px;
+    }
+.price-btn{
+        border-radius: 50px;
+        background: #fff;
+        color: #fe7856;
+        border: 2px solid #fe7856;
+        padding: 10px 30px;
+        /* z-index: 5; */
+        /* position: relative;
+        left: 38px; */
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+}
+.price-btn:hover{
+    background: linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%);
+    color: #fff;
+    background-size: 200%;
+}
+/* ------comments---- */
+/* for using image in bg it has to be in the same folder(components in this case) as the file,for using in html it is better to put the folder in public */
+
+/* ROUTE STARTS */
+.inner-banner {
+    background: #1668ec;
+    background: linear-gradient(to right, #1668ec 0%,#685ac5 100%);
+    width: 100%;
+    height: 45vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-text {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+    .inner-text h1 {
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+.breadcrumb {
+    padding: 0 15px;
+    margin: 0;
+    background: none;
+    justify-content: center;
+}
+
+    .breadcrumb .breadcrumb-item a {
+        color: #eee;
+        text-decoration:none ;
+    }
+
+        .breadcrumb .breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before, .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
