@@ -1,0 +1,155 @@
+
+.navbar-area{
+    height: 60px;
+    padding: 10px 0;
+    background: #1668ec;
+    background: linear-gradient(to right, #1668ec 0%,#685ac5 100%);
+  }
+  .navbar-area .container{
+    height: 100%;
+    /* background-color: rgb(93, 119, 141); */
+  }
+  .navbar-area .container .navbar{
+    height: 100%;
+    position: relative;
+  }
+  .navbar-area .navbar .navbar-nav .nav-item {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+    .navbar-area .navbar .navbar-nav .nav-item  a {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding: 26px 0;
+        color: #fff;
+        text-transform: capitalize;
+        position: relative;
+        opacity: 0.8;
+        transition: all 0.3s ease-out 0s;
+    }
+  
+    .navbar-area .navbar .navbar-nav .nav-item a::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 4px;
+        left: 50%;
+        margin: 0 2px;
+        bottom: 14px;
+        background-color: #fff;
+        transition: all 0.3s ease-out 0s;
+        transform: translate(-50%) scaleX(0);
+    }
+    .navbar-btn{
+      position: relative;
+      top:8px;
+    }
+    .navbar-btn ul li{
+      list-style: none;
+  }
+  .navbar-btn ul li a{
+      color: #fff;
+      padding:10px 30px;
+      font-size: 16px;
+      width:90px;
+      background: linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%);
+      background-size: 200%;
+      border-radius: 50px;
+      border: 2px solid #fe7856;
+      text-decoration: none;
+  }
+  .navbar-btn ul li a:hover{
+      background: #fff;
+      color: #fe7856;
+      border: 2px solid #fe7856;
+  }
+  
+  
+  
+    .navbar-area .navbar .navbar-nav .nav-item.active > a, .navbar-area .navbar .navbar-nav .nav-item:hover > a {
+        opacity: 1;
+        color: #fff;
+    }
+  
+        .navbar-area .navbar .navbar-nav .nav-item.active > a::before, .navbar-area .navbar .navbar-nav .nav-item:hover > a::before {
+            transform: translate(-50%) scaleX(1);
+        }
+        .dropdown-item:focus, .dropdown-item:hover {
+          color: #fff !important;
+          text-decoration: none;
+          background-color: #2c64e2;
+      }
+      
+      .dropdown-menu.dropdown-menu-right.show {
+          margin: 0px;
+          padding: 0px;
+      }
+      .navbar-area .navbar .navbar-toggler .toggler-icon {
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px 0;
+        display: block;
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+    }
+      .navbar-area .navbar .navbar-toggler.active .toggler-icon:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 7px;
+    }
+
+    .navbar-area .navbar .navbar-toggler.active .toggler-icon:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .navbar-area .navbar .navbar-toggler.active .toggler-icon:nth-of-type(3) {
+        transform: rotate(135deg);
+        top: -7px;
+    }
+      /* sticky */
+      
+    .navbar-area.sticky {
+        background: #fff;
+        z-index: 999;
+        position: fixed;
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+        padding: 0px;
+        width:100%;
+    }
+
+        .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
+            background-color: #333333;
+        }
+
+        .navbar-area.sticky .navbar .navbar-nav .nav-item a {
+            color: #000000;
+            opacity: 0.9;
+        }
+
+            .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
+                background-color: #1668ec;
+            }
+
+
+        .navbar-area.sticky .navbar .navbar-nav .nav-item.active, .navbar-area.sticky .navbar .navbar-nav .nav-item:hover {
+            color: #333333;
+            opacity: 1;
+        }
+
+            .navbar-area.sticky .navbar .navbar-nav .nav-item.active a {
+                color: #0067f4;
+            }
+
+        .navbar-area.sticky .navbar .navbar-btn li a.light {
+            color: #fff;
+            background-color: #fff;
+            background-size: 200%;
+        }
+
+        .navbar-area.sticky .navbar .navbar-btn li a.solid {
+            color: #fff;
+            background: linear-gradient(to right,#fe8464 0%,#fe6e9a 50%,#fe8464 100%);
+            background-size: 200%;
+        }
